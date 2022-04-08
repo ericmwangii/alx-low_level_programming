@@ -8,17 +8,17 @@
 
 int main(void)
 {
-int c = 0;
+int number = 0;
 
-while (c < 10)
+while (number < 10)
 {
-putchar(48 + c);
-if (c != 9)
+putchar('0' + number);
+if (number != 9)
 {
 putchar(',');
 putchar(' ');
 }
-c++;
+number++;
 }
 putchar('\n');
 return (0);
