@@ -12,7 +12,7 @@ char alphabet;
 char counter;
 for (counter = 0; counter < 10; counter++)
 {
-for (alphabet = 'a'; alphabet < 'z'; alphabet++)
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 _putchar(alphabet);
 _putchar('\n');
 }
