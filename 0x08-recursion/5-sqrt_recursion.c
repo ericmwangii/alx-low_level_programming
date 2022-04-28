@@ -9,16 +9,22 @@
 
 int _sqrt_recursion(int n)
 {
-int i;
-
-if (n < 0)
-return (-1);
-if (n == 0)
-return (0);
-for (i = 1; i * i <= n; i++)
-{
-if (i * i == n)
-return (i);
+return (squarerootofnumber(n, 1));
 }
+
+/**
+ * squarerootofnumber - returns the natural square root of a number
+ * @num: number
+ * @sqroot: square root of number
+ * Return: square root
+ */
+
+int squarerootofnumber(int num, int sqroot)
+{
+if (sqroot * sqroot == num)
+return (sqroot);
+else if (sqroot * sqroot > num)
 return (-1);
+else
+return (squarerootofnumber(num, sqroot + 1));
 }
