@@ -22,7 +22,7 @@ for (i = 0; i < n; i++)
 str = va_arg(valist, char *);
 
 if (str == NULL)
-str = "(nil)";
+printf("(nil)");
 else
 printf("%s", str);
 
